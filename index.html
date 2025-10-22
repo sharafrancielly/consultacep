@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Endereço por CEP</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main>
+        <div class="container-geral">
+            <section class="lado-esquerdo">
+                <h2>Consulta de CEP</h2>
+                <p>Insira o CEP para preencher o endereço automaticamente.</p>
+            </section>
+            
+            <section class="lado-direito">
+                <form id="form-cep-consulta">
+                    
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" placeholder="Ex: 00000-000" required maxlength="9" pattern="\d{5}-?\d{3}">
+                    
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado" disabled>
+                    
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" disabled>
+                    
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" disabled>
+                    
+                    <label for="endereco">Logradouro:</label>
+                    <input type="text" name="endereco" id="endereco" disabled>
+                    
+                    <button type="button" id="btn-pesquisar" onclick="capturarDado()">PESQUISAR</button>
+                    
+                </form>
+            </section>
+        </div>
+    </main>
+
+    </body>
+<script src="app.js"></script
+</html>
